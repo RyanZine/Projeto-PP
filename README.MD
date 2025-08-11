@@ -1,1 +1,27 @@
-Esse é o repositório do projeto Pequenos Programadores!
+<h1>Escopo do Projeto</h1>
+<p>Esse é o repositório do projeto Pequenos Programadores!</p>
+Dentro deste projeto, será criado um site de programação que ensinará crianças e pré-adolesccentes sobre o básico de informática e pregogamação, os preparando para suas futuras carreiras.
+Será utilizado o etodo Scrum e Kanban para a gestão do projeto, podendo fazer alterações no que for necessário e revisões para a entrega do projeto.
+<h2><strong>Linguagens de programação:</strong></h2>
+<ul>HTML
+CSS
+Javascript
+SQL Sever </ul>
+<p>Escopo o projeto:</p>
+<p> O projeto incluirá 7 páginas principais, podendo adicionar mais até a data de entrega. Entre elas nós temos:
+<ul>Página inicial
+Página de login
+Página de cadasto
+Página sobre nós
+Página de cursos
+Página de controle dos pais
+Página de termos e condições</p>
+<p>Cada uma dessas páginas tera como esqueleto a linguagem HTML e será estilizada pelo CSS. A funcionalidade e incrementações adicionais serão feitas através do Javascript. O SQL será para registro de novos usuários e resgate do momento do curso onde parou.</p>
+<p>Durante a construção do site, teremos uma pessoa para fazer a revisão das funcionalidades e detectar erros e bugs dos códigos com relação à pagina.</p>
+<h2><strong>Equipe de TI e seus códigos de responsábilidade:</strong></h2>
+<ul> Ryan - HTML
+Beatriz - CSS
+Danylo - Javascript
+Henrique - SQÇ Sever
+Vitor - Revisão de código </ul>
+<p>Em cada página haverá um prazo de entrega diferente e seus níveis de prioriadade para haver um controle maior do projeto.</p>
