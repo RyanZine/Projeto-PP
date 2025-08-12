@@ -1,6 +1,6 @@
 <h1>Escopo do Projeto</h1>
 <p>Esse é o repositório do projeto Pequenos Programadores!</p>
-Dentro deste projeto, será criado um site de programação que ensinará crianças e pré-adolesccentes sobre o básico de informática e pregogamação, os preparando para suas futuras carreiras.
+Dentro deste projeto, será criado um site de programação que ensinará crianças e pré-adolesccentes sobre o básico de informática e progamação, os preparando para suas futuras carreiras.
 Será utilizado o etodo Scrum e Kanban para a gestão do projeto, podendo fazer alterações no que for necessário e revisões para a entrega do projeto.
 <h2><strong>Linguagens de programação:</strong></h2>
 <ul>*HTML
