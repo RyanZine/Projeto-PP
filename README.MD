@@ -38,6 +38,8 @@ O JavaScript será responsável por dar funcionalidades ao site, como o menu ham
 <h2><strong>SQL Server</strong></h2>
 <p>Será a linguagem de programação utilizada para a criação de um banco de dados organizado para registro de informações e resgate das mesmas, deixando os novos usuários seguros sem perder as informações e o progresso do curso, enquanto os que desejarem sair poderão excluir sua conta do banco de dados sem precisar acessá-lo diretamente.</p>
 <p>Fará conexão direta com o HTML e JavaScript para registro, atualizações e manutenções do sistema.</p>
+<h2><strong>Revisão</strong><h2>
+<p>O responsável pelas revisões terá que verificar a funcionalidade do site e dentro do código. Caso detecte algum erro, poderá corrigi-lo junto com o responsável pelo código.
 <h2>Instrução</h2>
 <p>Os códigos serão feitos e executados seguindo as instruções da administração, sujeitos a revisão, manutenção, exclusão e criação de um novo projeto. A estilização do site seguirá as instruções (paleta de cores, logo, filmagens, fotos e vídeos) do Marketing.</p>
 <p>O prazo máximo de entrega do site será a última quinta-feira antes da apresentação para a banca.</p>
