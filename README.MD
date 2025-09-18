@@ -20,10 +20,12 @@ Será utilizado o método Scrum e Kanban para a gestão do projeto, podendo faze
 <p>Durante a construção do site, teremos uma pessoa para fazer a revisão das funcionalidades e detectar erros e bugs dos códigos com relação à página.</p>
 <h2><strong>Equipe de TI e seus códigos de responsabilidade:</strong></h2>
 <ul> *Ryan - HTML
+*Maria Eduarda - HTML
 *Beatriz - CSS
+*Danilo - CSS
 *Danylo - JavaScript
-*Henrique - SQL Server
-*Vitor - Revisão de código </ul>
+*Henrique - SQL
+*Vitor - SQL </ul>
 <p>Em cada página haverá um prazo de entrega diferente e seus níveis de prioridade para haver um controle maior do projeto.</p>
 <h2><strong>HTML</strong></h2>
 <p>HTML será responsável por toda a estrutura de código (esqueleto) do site.</p>
@@ -35,7 +37,7 @@ Será utilizado o método Scrum e Kanban para a gestão do projeto, podendo faze
 <h2><strong>JavaScript</strong></h2>
 O JavaScript será responsável por dar funcionalidades ao site, como o menu hambúrguer, vídeos e imagens com transição, animações, etc.; fornecendo uma página web lúdica e mais interativa com o público.</p>
 <p>Estará diretamente ligado com outras linguagens para fazer atualizações em tempo real e facilitar o back-end.</p>
-<h2><strong>SQL Server</strong></h2>
+<h2><strong>SQL</strong></h2>
 <p>Será a linguagem de programação utilizada para a criação de um banco de dados organizado para registro de informações e resgate das mesmas, deixando os novos usuários seguros sem perder as informações e o progresso do curso, enquanto os que desejarem sair poderão excluir sua conta do banco de dados sem precisar acessá-lo diretamente.</p>
 <p>Fará conexão direta com o HTML e JavaScript para registro, atualizações e manutenções do sistema.</p>
 <h2><strong>Revisão</strong></h2>
