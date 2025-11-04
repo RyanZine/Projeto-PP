@@ -10,31 +10,43 @@ CSS
 
 /* BODY */
 body {
-    background: #f2f8ff;
-    color: #003366;
-    line-height: 1.6;
+    margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(135deg, #dff6ff, #b2ebf2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  
 }
 
 /* CABEÇALHO */
 header {
-    background: linear-gradient(90deg, #00a2ff, #0056b3);
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    position: relative;
-    border-bottom: 5px solid #003366;
+    position: absolute;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #00bcd4, #0288d1);
+  color: #fff;
+  text-align: center;
+  padding: 18px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* LOGO */
 header h1::before {
-    font-size: 1.2rem;
-    margin-right: 10px;
+    margin: 0;
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 header h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-size: 1.5rem;
 }
 img.logo {
     position: absolute;
@@ -43,6 +55,7 @@ img.logo {
     width: auto;
     
 }
+
 
 /* MENU */
 nav {
@@ -75,23 +88,21 @@ nav ul li a:hover {
 
 /* BOTÕES */
 button, a.button {
-    background: #00a2ff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    transition: 0.3s;
+   width: 100%;
+  background: linear-gradient(90deg, #00bcd4, #0288d1);
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;  
 }
 
 button:hover, a.button:hover {
-    background: #ffd700;
-    color: #003366;
-    transform: scale(1.1);
+    transform: scale(1.03);
+  background: linear-gradient(90deg, #26c6da, #039be5);
 }
 
 /* SEÇÕES */
@@ -101,65 +112,82 @@ section, div {
 }
 
 h2 {
-    margin-bottom: 10px;
-    color: #004080;
-    font-size: 1.5rem;
+   color: #0288d1; /* azul mais vibrante */
+  font-size: 24px;
+  font-weight: 800;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* leve sombra */
 }
 
-/* INPUTS E FORMULÁRIOS */
+
 form {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    max-width: 400px;
-    margin: 20px auto;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    border: 3px solid #007bff;
+    background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 320px;
+  margin-top: 100px;
+  transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
 }
 
 label {
-    display: block;
-    margin: 10px 0 5px;
-    text-align: left;
-    color: #004080;
-    font-weight: bold;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #444;
 }
 
 input {
-    padding: 10px;
-    border: 2px solid #00a2ff;
-    border-radius: 8px;
-    width: 100%;
-    margin-bottom: 15px;
-    transition: 0.3s;
-    font-size: 1rem;
+ width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #b3e5fc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+    
 }
 
 input:focus {
-    border-color: #ffd700;
-    outline: none;
-    box-shadow: 0 0 8px #ffd700;
+  border-color: #0288d1;
+  outline: none;
+  box-shadow: 0 0 6px rgba(2, 136, 209, 0.3)
 }
 
 /* RODAPÉ */
 footer {
-    background: #003366;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    margin-top: 30px;
-    border-top: 5px solid #00a2ff;
+     margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 footer a {
-    color: #ffd700;
-    text-decoration: none;
-    font-weight: bold;
+    color: #0288d1;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
+
+/* ======== ELEMENTOS DECORATIVOS ======== */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: float 8s infinite ease-in-out;
+}
+
+.bubble.small { width: 40px; height: 40px; background: #4dd0e1; top: 20%; left: 10%; animation-delay: 0s; }
+.bubble.medium { width: 70px; height: 70px; background: #81d4fa; top: 60%; left: 80%; animation-delay: 2s; }
+.bubble.large { width: 100px; height: 100px; background: #29b6f6; top: 75%; left: 15%; animation-delay: 4s; }
+
 
 /* MENU HAMBURGUER (MOBILE) */
 .menu-toggle {
@@ -195,3 +223,87 @@ a {
     text-decoration: none;
     color: #ffd700;
 }
+
+/* SEÇÃO RECURSOS - SEM ID/CLASSE */
+section {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+section li {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 2px solid #00a2ff;
+    font-weight: bold;
+    color: #003366;
+    transition: 0.3s;
+    width: 80%;
+    max-width: 300px;
+}
+
+section li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    background: #f0f8ff;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.cadastro-link {
+  color: #0288d1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.professor-link {
+  color: #0288d1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cadastro-link:hover,
+.professor-link:hover {
+  text-decoration: underline;
+}
+
+.logo-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.logo-link:hover {
+  color: #ffd700;
+}
+
+.logo-link {
+  position: relative;
+  z-index: 10;
+}
+
+.bubble {
+  z-index: 1;
+}
+
