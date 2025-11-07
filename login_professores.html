@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    <title>Login_professores</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pequenos Programadores - Login Professores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<header>
-     <a href="pequenos_programadores.html"><img src="cabeça_logo.png" alt="Logo Pequenos Programadores" class="logo">
-    <h1>Pequenos Programadores</h1> </a>
-</header>
 <body>
-    <!--Login-->
-    <div>
-    <h2>Login - Professores</h2>
-    <section>
-        <form action="/login" method="post">
-            <label for="username">Usuário:</label>
-            <input type="text" id="username" name="username" required><br><br>
 
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required><br><br>
+  <header>
+    <h1>🤖 Pequenos Programadores <span>💡</span></h1>
+  </header>
 
-            <button type="submit">Entrar</button>
-        </form>
-    </section>
-    </div>
-    <!--Link para Cadastro-->
-    <section>
-        <p>Não possui cadastro? <a href="cadastro_professores.html">Clique aqui</a> para se cadastrar.</p>
-    </section>
-    <!--Rodapé-->
-    <section>
-        <footer>
-            <p>&copy; 2025 Pequenos Programadores. Todos os direitos reservados.</p>
-        </footer>
-</body>
-</html>
+  <div class="bubble small"></div>
+  <div class="bubble medium"></div>
+  <div class="bubble large"></div>
+
+ <div class="login-container">
+  <form action="/login" method="post">
+    <h2>Bem-vindo(a)!</h2>
+
+    <label for="usuario">Usuário:</label>
+    <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+    <button type="submit">Entrar</button>
+
+    <p class="footer-text">
+      Novo por aqui? <a href="cadastro.html" class="cadastro-link">Cadastre-se</a><br>
+      É professor? <a href="login_professores.html" class="professor-link">Login para Professores</a>
+    </p>
+  </form>
+</div>
