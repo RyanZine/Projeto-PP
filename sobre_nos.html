@@ -3,28 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sobre nós — Pequenos Programadores: missão, valores e como ensinamos programação para crianças de forma lúdica.">
   <title>Pequenos Programadores - Sobre Nós</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="pequenos_programadores.js" defer></script>
 </head>
 <body>
+    <!-- Círculos animados -->
+    <div class="animated-circle circle-1"></div>
+    <div class="animated-circle circle-2"></div>
+    <div class="animated-circle circle-3"></div>
 
-  <header>
-    <h1>🤖 Pequenos Programadores <span>💡</span></h1>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+  <header class="header-main">
+    <h1>
+      <a href="pequenos_programadores.html" class="logo-link">
+        <img src="logo.png" alt="Logo Pequenos Programadores" class="logo" width="140" height="70">
+        <span>Pequenos Programadores</span>
+      </a>
+    </h1>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="pequenos_programadores.html">Início</a></li>
+        <li><a href="sobre_nos.html" aria-current="page">Sobre Nós</a></li>
+        <li><a href="acesso_cursos.html">Cursos</a></li>
+        <li><a href="trabalhe_conosco.html">Trabalhe Conosco</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="bubble small"></div>
-  <div class="bubble medium"></div>
-  <div class="bubble large"></div>
+  <main id="main-content">
+    <div class="container">
+      <figure class="about-hero full-bleed">
+        <img src="grupo.png" alt="Equipe Pequenos Programadores" class="about-img" loading="lazy">
+        <figcaption class="about-caption">Nossa equipe: educação, tecnologia e muita curiosidade.</figcaption>
+      </figure>
+      <h2>Sobre Nós</h2>
+      <p>Somos uma iniciativa dedicada a ensinar programação e pensamento computacional para crianças e adolescentes, de forma divertida e prática. Nosso objetivo é desenvolver habilidades de lógica, criatividade e resolução de problemas por meio de projetos lúdicos e orientados.</p>
 
-  <div class="login-container">
-    <h2>Sobre Nós</h2>
-    <p>Somos uma iniciativa dedicada a ensinar programação e pensamento computacional para crianças e adolescentes, de forma divertida e prática. Nosso objetivo é desenvolver habilidades de lógica, criatividade e resolução de problemas.</p>
+      <p>Nossa missão é democratizar o acesso ao conhecimento de tecnologia, inspirando curiosidade e oferecendo um espaço seguro onde as crianças podem experimentar, errar e aprender. Valorizamos a inclusão, a criatividade e a formação de uma comunidade de apoio entre alunos, famílias e educadores.</p>
 
-    <p class="footer-text">
-      Voltar para <a href="login.html">Login</a>
-    </p>
-  </div>
+      <p>Conheça nossos cursos e atividades: <a href="acesso_cursos.html">Acesse os Cursos</a> ou <a href="cadastro.html">Cadastre-se</a> para começar.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pequenos Programadores. Todos os direitos reservados.</p>
+    <p><a href="privacidade.html">Política de Privacidade</a> | <a href="termos.html">Termos de Uso</a></p>
+  </footer>
+
+  <script src="pequenos_programadores.js" defer></script>
 
 </body>
 </html>
