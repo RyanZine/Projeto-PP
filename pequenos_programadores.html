@@ -4,64 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Pequenos Programadores — cursos de programação para crianças com aulas interativas, projetos práticos e comunidade de apoio.">
     <title>Pequenos Programadores - Início</title>
 </head>
-<!--Cabeçalho-->
-    <header>
-       <a href="pequenos_programadores.html"><img src="cabeça_logo.png" alt="Logo Pequenos Programadores" class="logo">
-        <h1>Pequenos Programadores</a></h1> 
-        <nav>
+<body>
+    <!-- Círculos animados -->
+    <div class="animated-circle circle-1"></div>
+    <div class="animated-circle circle-2"></div>
+    <div class="animated-circle circle-3"></div>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <header class="header-main">
+        <h1>
+            <a href="pequenos_programadores.html">
+                <img src="logo.png" alt="Logo Pequenos Programadores" class="logo" width="120" height="60">
+                Pequenos Programadores
+            </a>
+        </h1>
+        <nav aria-label="Navegação principal">
             <ul>
-                <li><a href="pequenos_programadores.html">Início</a></li>
+                <li><a href="pequenos_programadores.html" aria-current="page">Início</a></li>
                 <li><a href="sobre_nos.html">Sobre Nós</a></li>
                 <li><a href="acesso_cursos.html">Cursos</a></li>
                 <li><a href="controle.html">Controle dos Pais</a></li>
             </ul>
         </nav>
     </header>
-<body>
-    <main>
+    <main id="main-content">
         <!--Sobre o site-->
         <section>
             <h2>O que é o Pequenos Programadores?</h2>
-            <p>Pequenos Programadores é uma plataforma dedicada a ensinar programação para crianças de forma divertida e interativa.</p>
+            <p>No <strong>Pequenos Programadores</strong> transformamos curiosidade em habilidade: oferecemos aulas pensadas para crianças, com atividades práticas e experiências lúdicas que tornam o aprendizado de programação claro, seguro e divertido. Aqui, cada projeto é uma descoberta — do primeiro comando até a criação dos próprios jogos e animações.</p>
         </section>
         <section>
             <h2>Por que aprender programação?</h2>
-            <p>Aprender programação desenvolve habilidades de resolução de problemas, lógica e criatividade, preparando as crianças para o futuro digital.</p>
+            <p>Programar ajuda a desenvolver pensamento lógico, criatividade e capacidade de resolver problemas de forma estruturada. Além disso, nossas aulas fortalecem a confiança para experimentar, errar e melhorar — competências essenciais para o futuro digital e para qualquer carreira que venha a escolher.</p>
         </section>
         <!--Lista sobre o curso-->
         <section>
             <h2>Recursos</h2>
             <ul>
-                <li>Aulas interativas</li>
-                <li>Projetos práticos</li>
-                <li>Comunidade de apoio</li>
+                <li class="resource-item">
+                    <button class="resource-toggle" aria-expanded="false">
+                        <span class="resource-title">Aulas interativas</span>
+                        <svg class="resource-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2" fill="none"></circle>
+                            <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+                        </svg>
+                    </button>
+                    <div class="resource-details" aria-hidden="true">
+                        <p>Atividades guiadas passo-a-passo que usam jogos, blocos visuais e exercícios práticos para garantir que cada criança entenda os conceitos e se divirta aprendendo.</p>
+                    </div>
+                </li>
+
+                <li class="resource-item">
+                    <button class="resource-toggle" aria-expanded="false">
+                        <span class="resource-title">Projetos práticos</span>
+                        <svg class="resource-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2" fill="none"></circle>
+                            <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+                        </svg>
+                    </button>
+                    <div class="resource-details" aria-hidden="true">
+                        <p>Projetos que transformam teoria em prática: crie jogos, animações e pequenos aplicativos que seus filhos podem mostrar e continuar aprimorando.</p>
+                    </div>
+                </li>
+
+                <li class="resource-item">
+                    <button class="resource-toggle" aria-expanded="false">
+                        <span class="resource-title">Comunidade de apoio</span>
+                        <svg class="resource-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2" fill="none"></circle>
+                            <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+                        </svg>
+                    </button>
+                    <div class="resource-details" aria-hidden="true">
+                        <p>Um espaço seguro para trocar ideias, tirar dúvidas com mentores e celebrar conquistas — perfeito para aprender em grupo e ganhar confiança.</p>
+                    </div>
+                </li>
             </ul>
         </section>
         <!--Cadastro-->
-        <div class="cadastro">
-        <section>
+        <section class="cadastro">
             <h2>Comece agora!</h2>
             <p>Inscreva-se para acessar nossos cursos e comece a aprender programação hoje mesmo!</p>
-            <a href="cadastro.html"><button>Inscreva-se</button></a>
+            <a class="btn" href="cadastro.html">Inscreva-se</a>
         </section>
-        </div>
         <!--Login-->
-        <div class="login">
-        <section>
+        <section class="login">
             <h2>Já se cadastrou?</h2>
             <p>Faça login para continuar aprendendo e acessando seus projetos.</p>
-            <a href="login.html"><button>Login</button></a>
+            <a class="btn" href="login.html">Login</a>
         </section>
-        </div>
     </main>
-        <!--Rodapé-->
-        <section>
+    <!--Rodapé-->
     <footer>
         <p>&copy; 2025 Pequenos Programadores. Todos os direitos reservados.</p>
         <p><a href="privacidade.html">Política de Privacidade</a> | <a href="termos.html">Termos de Uso</a></p>
     </footer>
-        </section>
+    <script src="pequenos_programadores.js" defer></script>
 </body>
 </html>

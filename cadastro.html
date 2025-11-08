@@ -3,57 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastro no Pequenos Programadores — crie sua conta e comece a aprender programação para crianças.">
   <title>Pequenos Programadores - Cadastro</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="pequenos_programadores.js" defer></script>
 </head>
 <body>
-
-  <header>
+  <!-- Círculos animados -->
+  <div class="animated-circle circle-1"></div>
+  <div class="animated-circle circle-2"></div>
+  <div class="animated-circle circle-3"></div>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+  <header class="header-main">
     <h1>
-    <a href="pequenos_programadores.html" class="logo-link">🤖 Pequenos Programadores</a>
-    <span>💡</span>
-  </h1>
+      <a href="pequenos_programadores.html" class="logo-link">
+        <img src="logo.png" alt="Logo Pequenos Programadores" class="logo">
+        <span>Pequenos Programadores</span>
+      </a>
+    </h1>
   </header>
 
-  <div class="bubble small"></div>
-  <div class="bubble medium"></div>
-  <div class="bubble large"></div>
+  <main id="main-content">
+    <div class="bubble small animate"></div>
+    <div class="bubble medium animate"></div>
+    <div class="bubble large animate"></div>
 
-  <div class="login-container">
-  <form action="/submit" method="post">
-    <h2>Cadastre-se!</h2>
+    <div class="login-container animate fade-in">
+      <form action="/submit" method="post" id="cadastroForm">
+        <h2 class="animate">Cadastre-se!</h2>
 
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        <div class="form-group input-icon animate slide-in-left">
+            <i>👤</i>
+            <div class="form-floating">
+                <input type="text" id="nome" name="nome" required placeholder=" ">
+                <label for="nome">Nome Completo</label>
+            </div>
+        </div>
 
-    <label for="usuario">Usuário:</label>
-    <input type="text" id="usuario" name="usuario" placeholder="Escolha um usuário" required>
+        <div class="form-group input-icon animate slide-in-right">
+            <i>🎮</i>
+            <div class="form-floating">
+                <input type="text" id="usuario" name="usuario" required placeholder=" ">
+                <label for="usuario">Nome de Usuário</label>
+            </div>
+        </div>
 
-    <label for="responsavel">Responsável:</label>
-    <input type="text" id="responsavel" name="responsavel" placeholder="Nome do responsável" required>
+        <div class="form-group input-icon animate slide-in-left">
+            <i>👨‍👩‍👧‍👦</i>
+            <div class="form-floating">
+                <input type="text" id="responsavel" name="responsavel" required placeholder=" ">
+                <label for="responsavel">Nome do Responsável</label>
+            </div>
+        </div>
 
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        <div class="form-group input-icon animate slide-in-right">
+            <i>📧</i>
+            <div class="form-floating">
+                <input type="email" id="email" name="email" required placeholder=" ">
+                <label for="email">Seu E-mail</label>
+            </div>
+        </div>
 
-    <label for="email_responsavel">E-mail do Responsável:</label>
-    <input type="email" id="email_responsavel" name="email_responsavel" placeholder="E-mail do responsável" required>
+        <div class="form-group input-icon animate slide-in-left">
+            <i>📧</i>
+            <div class="form-floating">
+                <input type="email" id="email_responsavel" name="email_responsavel" required placeholder=" ">
+                <label for="email_responsavel">E-mail do Responsável</label>
+            </div>
+        </div>
 
-    <label for="senha">Senha:</label>
-    <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+        <div class="form-group input-icon animate slide-in-right">
+            <i>🔒</i>
+            <div class="form-floating">
+                <input type="password" id="senha" name="senha" required placeholder=" " data-min-length="8">
+                <label for="senha">Senha</label>
+            </div>
+            <div class="password-strength">
+                <div class="progress"></div>
+            </div>
+        </div>
 
-    <label for="nivel_escolar">Nível de Escolaridade:</label>
-    <select id="nivel_escolar" name="nivel_escolar" required>
-      <option value="fundamental">Ensino Fundamental</option>
-      <option value="fundamental2">Ensino Fundamental II</option>
-    </select>
+        <div class="form-group animate slide-in-left">
+            <label for="nivel_escolar">Nível de Escolaridade:</label>
+        <select id="nivel_escolar" name="nivel_escolar" required>
+          <option value="fundamental">Ensino Fundamental</option>
+          <option value="fundamental2">Ensino Fundamental II</option>
+        </select>
 
-    <button type="submit">Cadastrar</button>
+        <button type="submit">Cadastrar</button>
 
-    <p class="footer-text">
-      Já possui cadastro? <a href="login.html" class="cadastro-link">Faça login</a><br>
-      É professor? <a href="login_professores.html" class="professor-link">Login Professores</a>
-    </p>
-  </form>
-</div>
+        <p class="footer-text">
+          Já possui cadastro? <a href="login.html" class="cadastro-link">Faça login</a><br>
+          É professor? <a href="login_professores.html" class="professor-link">Login Professores</a>
+        </p>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
 

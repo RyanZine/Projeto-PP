@@ -3,35 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cursos do Pequenos Programadores — programação para crianças com aulas interativas e projetos práticos.">
   <title>Pequenos Programadores - Cursos</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="pequenos_programadores.js" defer></script>
 </head>
 <body>
 
-  <header>
-    <h1>🤖 Pequenos Programadores <span>💡</span></h1>
+  <!-- Círculos animados -->
+  <div class="animated-circle circle-1"></div>
+  <div class="animated-circle circle-2"></div>
+  <div class="animated-circle circle-3"></div>
+
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+  <header class="header-main">
+    <h1>
+      <a href="pequenos_programadores.html" class="logo-link">
+        <img src="logo.png" alt="Logo Pequenos Programadores" class="logo" width="120" height="60">
+        <span>Pequenos Programadores</span>
+      </a>
+    </h1>
   </header>
 
-  <div class="bubble small"></div>
-  <div class="bubble medium"></div>
-  <div class="bubble large"></div>
+  <main id="main-content">
+    <div class="bubble small"></div>
+    <div class="bubble medium"></div>
+    <div class="bubble large"></div>
 
-  <div class="login-container">
-    <h2>Nossos Cursos</h2>
-    <p>Descubra os cursos que oferecemos para crianças e adolescentes:</p>
+    <div class="login-container">
+      <h2>Nossos Cursos</h2>
+      <p>Descubra os cursos que oferecemos para crianças e adolescentes:</p>
 
-    <ul>
-      <li>Programação Scratch (6-10 anos)</li>
-      <li>Python Básico (10-14 anos)</li>
-      <li>Robótica Educacional (8-14 anos)</li>
-      <li>Desenvolvimento Web (12-16 anos)</li>
-    </ul>
+      <ul>
+        <li>Programação Scratch (6-10 anos)</li>
+        <li>Python Básico (10-14 anos)</li>
+        <li>Robótica Educacional (8-14 anos)</li>
+        <li>Desenvolvimento Web (12-16 anos)</li>
+      </ul>
 
-    <p class="footer-text">
-      Voltar para <a href="login.html">Login</a>
-    </p>
-  </div>
+      <p class="footer-text">
+        Voltar para <a href="login.html">Login</a>
+      </p>
+    </div>
+  </main>
 
 </body>
 </html>

@@ -4,37 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Login Pequenos Programadores — entre na sua conta para acessar cursos e projetos.">
     <title>PP-Login</title>
+    <script src="pequenos_programadores.js" defer></script>
 </head>
- <header>
-         <a href="pequenos_programadores.html"><img src="cabeça_logo.png" alt="Logo Pequenos Programadores" class="logo">
-    <h1>Pequenos Programadores</h1></a>
-    </header>
 <body>
-    <!--Login-->
-    <div>
-    <h2>Login</h2>
-    <section>
-        <form action="/login" method="post">
-            <label for="username">Usuário:</label>
-            <input type="text" id="username" name="username" required><br><br>
+    <!-- Círculos animados -->
+    <div class="animated-circle circle-1"></div>
+    <div class="animated-circle circle-2"></div>
+    <div class="animated-circle circle-3"></div>
+    <!-- Círculos animados -->
+    <div class="animated-circle circle-1"></div>
+    <div class="animated-circle circle-2"></div>
+    <div class="animated-circle circle-3"></div>
 
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required><br><br>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <header class="header-main">
+        <h1>
+            <a href="pequenos_programadores.html" class="logo-link">
+                <img src="logo.png" alt="Logo Pequenos Programadores" class="logo">
+                <span>Pequenos Programadores</span>
+            </a>
+        </h1>
+    </header>
 
-            <button type="submit">Entrar</button>
-        </form>
-    </section>
-    </div>
-    <!--Link para Cadastro-->
-    <section>
-        <p>Não possui cadastro? <a href="cadastro.html">Clique aqui</a> para se cadastrar.</p>
-        <p>É professor? <a href="login_professores.html">Clique aqui</a> para fazer login.</p>
-    </section>
+    <main id="main-content">
+        <!--Login-->
+        <div class="animate fade-in">
+            <h2>Login</h2>
+            <section>
+                <form action="/login" method="post" class="login-form">
+                    <div class="form-group input-icon animate slide-in-left">
+                        <i>👤</i>
+                        <div class="form-floating">
+                            <input type="text" id="username" name="username" required placeholder=" ">
+                            <label for="username">Usuário</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group input-icon animate slide-in-right">
+                        <i>🔒</i>
+                        <div class="form-floating">
+                            <input type="password" id="password" name="password" required data-min-length="6" placeholder=" ">
+                            <label for="password">Senha</label>
+                        </div>
+                        <div class="password-strength">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="animate">Entrar</button>
+                </form>
+            </section>
+        </div>
+        <!--Link para Cadastro-->
+        <section>
+            <p>Não possui cadastro? <a href="cadastro.html">Clique aqui</a> para se cadastrar.</p>
+            <p>É professor? <a href="login_professores.html">Clique aqui</a> para fazer login.</p>
+        </section>
+    </main>
+
     <!--Rodapé-->
-    <section>
-        <footer>
-            <p>&copy; 2025 Pequenos Programadores. Todos os direitos reservados.</p>
-        </footer>
+    <footer>
+        <p>&copy; 2025 Pequenos Programadores. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
