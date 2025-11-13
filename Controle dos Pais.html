@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autorização dos Responsáveis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', Arial, sans-serif;
+            background: linear-gradient(135deg, #00bcd4, #0288d1);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #0288d1;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 800;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .termo-content {
+            background: rgba(0, 188, 212, 0.05);
+            border: 2px solid #b3e5fc;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            max-height: 400px;
+            overflow-y: auto;
+            text-align: justify;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .termo-content h2 {
+            color: #0288d1;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .termo-content p {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .termo-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .termo-content li {
+            margin-bottom: 0.8rem;
+        }
+
+        .authorization-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: rgba(0, 188, 212, 0.08);
+            border-radius: 8px;
+            border: 2px solid #b3e5fc;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+        }
+
+        input[type="checkbox"] {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            accent-color: #0288d1;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .checkbox-container label {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #222;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        input[type="checkbox"]:hover {
+            transform: scale(1.1);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            justify-content: center;
+        }
+
+        button {
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-enviar {
+            background: linear-gradient(135deg, #00bcd4, #0288d1);
+            color: white;
+        }
+
+        .btn-enviar:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(2, 136, 209, 0.4);
+        }
+
+        .btn-enviar:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .btn-cancelar {
+            background: #e0e0e0;
+            color: #333;
+        }
+
+        .btn-cancelar:hover {
+            background: #d0d0d0;
+            transform: translateY(-2px);
+        }
+
+        .mensagem {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            display: none;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .mensagem.sucesso {
+            background: #c8e6c9;
+            color: #2e7d32;
+            display: block;
+        }
+
+        .mensagem.erro {
+            background: #ffcdd2;
+            color: #c62828;
+            display: block;
+        }
+
+        /* Scrollbar personalizada */
+        .termo-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .termo-content::-webkit-scrollbar-track {
+            background: rgba(0, 188, 212, 0.1);
+            border-radius: 10px;
+        }
+
+        .termo-content::-webkit-scrollbar-thumb {
+            background: #0288d1;
+            border-radius: 10px;
+        }
+
+        .termo-content::-webkit-scrollbar-thumb:hover {
+            background: #00bcd4;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .termo-content {
+                padding: 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Autorização dos Responsáveis</h1>
+
+        <div class="termo-content">
+            <h2>Termo de Autorização e Responsabilidade</h2>
+
+            <p>
+                <strong>O responsável legal do menor declara que:</strong>
+            </p>
+
+            <p>
+                Eu, responsável legal, autorizo expressamente o menor sob minha tutela a:
+            </p>
+
+            <ul>
+                <li><strong>Acessar e utilizar a plataforma de ensino online</strong> para fins educacionais exclusivamente;</li>
+                <li><strong>Participar das aulas</strong> e atividades pedagógicas disponibilizadas;</li>
+                <li><strong>Visualizar e baixar materiais educacionais</strong> disponibilizados pelos professores;</li>
+                <li><strong>Interagir com professores e colegas</strong> de forma respeitosa e segura;</li>
+                <li><strong>Submeter atividades e avaliações</strong> conforme solicitado.</li>
+            </ul>
+
+            <p>
+                Declaro que:
+            </p>
+
+            <ul>
+                <li>Li e compreendi todas as normas e regulamentações de uso da plataforma;</li>
+                <li>Assumo total responsabilidade pelo uso adequado da plataforma pelo menor;</li>
+                <li>Autorizo o monitoramento das atividades do menor na plataforma para fins de segurança e educacionais;</li>
+                <li>Compreendo que qualquer uso indevido pode resultar em suspensão ou cancelamento do acesso;</li>
+                <li>Sou responsável por garantir que o menor utilize a plataforma de forma segura e apropriada.</li>
+            </ul>
+        </div>
+
+        <div class="authorization-box">
+            <div class="checkbox-container">
+                <input type="checkbox" id="autorizo" name="autorizo">
+                <label for="autorizo">CONCORDO E AUTORIZO a utilização a plataforma e ter acesso à plataforma e às aulas. </label>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn-enviar" id="btnEnviar" disabled onclick="enviarAutorizacao()">Enviar Autorização</button>
+            <button class="btn-cancelar" onclick="cancelarAutorizacao()">Cancelar</button>
+        </div>
+
+        <div class="mensagem" id="mensagem"></div>
+    </div>
+
+    <script>
+        // Ativa o botão somente quando checkbox é marcada
+        document.getElementById('autorizo').addEventListener('change', function() {
+            document.getElementById('btnEnviar').disabled = !this.checked;
+        });
+
+        function enviarAutorizacao() {
+            const checkbox = document.getElementById('autorizo');
+            const mensagem = document.getElementById('mensagem');
+
+            if (checkbox.checked) {
+                mensagem.textContent = '✓ Autorização enviada com sucesso!';
+                mensagem.className = 'mensagem sucesso';
+                setTimeout(() => {
+                    // Redireciona para página de login ou dashboard após 2 segundos
+                    // window.location.href = 'login.html';
+                    alert('Você será redirecionado para o dashboard');
+                }, 2000);
+            } else {
+                mensagem.textContent = '✗ Você deve aceitar o termo para continuar';
+                mensagem.className = 'mensagem erro';
+            }
+        }
+
+        function cancelarAutorizacao() {
+            if (confirm('Deseja cancelar? Você será redirecionado.')) {
+                // window.location.href = 'index.html';
+                alert('Você será redirecionado para a página inicial');
+            }
+        }
+    </script>
+</body>
+</html>
