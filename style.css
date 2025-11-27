@@ -5,7 +5,7 @@ CSS
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', "Arial Rounded MT Bold", Arial, sans-serif;
+     font-family: 'Nunito', "Arial Rounded MT Bold", Arial, sans-serif;
 }
 
 /* Variáveis CSS */
@@ -1244,10 +1244,11 @@ form {
 
 label {
   display: block;
-  text-align: left;
+  text-align: center;
   margin-bottom: 5px;
   font-weight: 600;
   color: #444;
+  
 }
 
 input {
@@ -1384,18 +1385,48 @@ footer a:hover {
         background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
         color: #fff;
     }
-
-    .login-container,
-    form {
-        background: #333;
-        color: #fff;
+    .modules {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaço entre os containers */
+    flex-wrap: wrap;
+    margin-top: 20px;
+    }
+    
+    .module-container {
+    background-color: #0288d1;
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
     }
 
-    input {
-        background: #444;
-        border-color: #666;
-        color: #fff;
+    .module-container:hover {
+    transform: scale(1.05); /* Efeito ao passar o mouse */
     }
+
+    .module-container h3 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+
+    .module-container ul {
+    list-style: none;
+    padding: 0;
+    }
+
+    .module-container li {
+    background-color: #03a9f4;
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+    }
+
 
     input:focus {
         border-color: #0288d1;
@@ -1403,6 +1434,8 @@ footer a:hover {
 
     footer {
         color: #ccc;
+        text-align: center;
+        justify-content: center;
     }
 }
 /*hiperlinks*/
